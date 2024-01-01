@@ -1,0 +1,4 @@
+const defaultConfig = {
+  content: [],
+  theme: {},
+};
