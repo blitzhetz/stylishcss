@@ -1,4 +1,235 @@
+/*
+  Created by Slobodan Živanović.
+*/
+
+/*
+  Apply box-sizing border-box to all elements
+  Prevent padding and border from affecting element width
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/*
+  Reset margin, padding for all elements
+  Use a consistent sensible line-height in all browsers
+*/
 * {
   margin: 0;
   padding: 0;
+  line-height: calc(0.25rem + 1em + 0.25rem);
+}
+
+/*
+  Reset border and background for most elements
+*/
+*:where(:not(fieldset, progress, meter)) {
+  border: 0;
+  background: none;
+}
+
+/*
+  Reset font properties and text size adjustments for the root html element
+*/
+html {
+  -webkit-text-size-adjust: 100%;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+/*
+  Enable smooth scrolling when the html element is focused
+*/
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+/*
+  Reset hr element styles
+*/
+hr {
+  height: 0;
+  color: inherit;
+  border-top: 1px solid;
+}
+
+/*
+  Set display: block for replaced elements like img, svg, video, etc.
+*/
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+}
+
+/*
+  Set max-width: 100% and height: auto for img, svg, video elements
+*/
+:where(img, svg, video) {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+  Set stroke: none and fill: currentColor for svg elements
+*/
+:where(svg) {
+  stroke: none;
+  fill: currentColor;
+}
+
+/*
+  Set stroke: currentColor and fill: none for svg elements without fill attribute
+*/
+:where(svg):where(:not([fill])) {
+  stroke: currentColor;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/*
+  Set width: 5rem and height: auto for svg elements without width attribute
+*/
+:where(svg):where(:not([width])) {
+  width: 5rem;
+  height: auto;
+}
+
+/*
+  Reset styles for form elements like input, button, textarea, select
+*/
+:where(input, button, textarea, select),
+:where(input[type="file"])::-webkit-file-upload-button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+/*
+  Set resize: vertical for textarea elements
+*/
+:where(textarea) {
+  resize: vertical;
+}
+
+/*
+  Set resize: block for textarea elements when supported
+*/
+@supports (resize: block) {
+  :where(textarea) {
+    resize: block;
+  }
+}
+
+/*
+  Set overflow-wrap: break-word for paragraph and heading elements
+*/
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+/*
+  Set list-style-position: inside for unordered and ordered list elements
+*/
+:where(ul, ol) {
+  list-style-position: inside;
+}
+
+/*
+  Remove list-style for unordered and ordered list elements with role="list"
+*/
+:where(ul, ol)[role="list"] {
+  list-style: none;
+}
+
+/*
+  Set text-decoration-skip-ink: auto for anchor elements without class
+*/
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/*
+  Set cursor: pointer and touch-action: manipulation for interactive elements
+*/
+:where(
+    a[href],
+    area,
+    button,
+    input,
+    label[for],
+    select,
+    summary,
+    textarea,
+    [tabindex]:not([tabindex*="-"])
+  ) {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+/*
+  Set cursor: auto for input type="file"
+*/
+:where(input[type="file"]) {
+  cursor: auto;
+}
+
+/*
+  Set cursor: pointer for input type="file" elements and customize file upload button
+*/
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  cursor: pointer;
+}
+
+/*
+  Add focus styles only when user can see animations
+*/
+@media (prefers-reduced-motion: no-preference) {
+  :focus-visible {
+    outline-offset: 5px;
+    transition: outline-offset 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+/*
+  Set tap highlight color to transparent and disable text selection for interactive elements
+*/
+:where(button, button[type], input[type="button"], input[type="submit"], input[type="reset"]),
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  text-align: center;
+}
+
+/*
+  Set cursor: not-allowed for disabled interactive elements
+*/
+:where(
+    button,
+    button[type],
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"]
+  )[disabled] {
+  cursor: not-allowed;
 }
