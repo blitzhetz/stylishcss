@@ -14,7 +14,6 @@ const args = minimist(process.argv.slice(2), {
   },
 });
 
-init(args);
 // TODO: create a help args command because this is stupid
 const shouldRunInit = args.init || (!args.init && !args.build && !args.watch);
 const shouldRunBuild = args.build || (!args.init && !args.build && !args.watch);
