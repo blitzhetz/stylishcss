@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish Colors</title>
+    <link rel="stylesheet" href="../dist/stylish.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 1200px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .color {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .color > div {
+        flex: 1 1 calc(33.33% - 20px);
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        margin-bottom: 5px;
+        font-size: 1.2em;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        font-weight: bold;
+      }
+
+      /* Add some hover effect for better user interaction */
+      .color > div:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 2rem;
+        margin-block: 2em;
+      }
+
+      hr {
+        margin-block: 1em;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-1">
+    <div class="container bg-white">
+      <h2 class="title text-black">Stylish Color Palette</h2>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-gray-1">Text: gray-1</h2>
+          <p class="bg-gray-1">Bg: gray-1</p>
+        </div>
+        <div>
+          <h2 class="text-gray-2">Text: gray-2</h2>
+          <p class="bg-gray-2">Bg: gray-2</p>
+        </div>
+        <div>
+          <h2 class="text-gray-3">Text: gray-3</h2>
+          <p class="bg-gray-3">Bg: gray-3</p>
+        </div>
+        <div>
+          <h2 class="text-gray-4">Text: gray-4</h2>
+          <p class="bg-gray-4">Bg: gray-4</p>
+        </div>
+        <div>
+          <h2 class="text-gray-5">Text: gray-5</h2>
+          <p class="bg-gray-5">Bg: gray-5</p>
+        </div>
+        <div>
+          <h2 class="text-gray-6">Text: gray-6</h2>
+          <p class="bg-gray-6">Bg: gray-6</p>
+        </div>
+        <div>
+          <h2 class="text-gray-7">Text: gray-7</h2>
+          <p class="bg-gray-7">Bg: gray-7</p>
+        </div>
+        <div>
+          <h2 class="text-gray-8">Text: gray-8</h2>
+          <p class="bg-gray-8 text-white">Bg: gray-8</p>
+        </div>
+        <div>
+          <h2 class="text-gray-9">Text: gray-9</h2>
+          <p class="bg-gray-9 text-white">Bg: gray-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-red-1">Text: red-1</h2>
+          <p class="bg-red-1">Bg: red-1</p>
+        </div>
+        <div>
+          <h2 class="text-red-2">Text: red-2</h2>
+          <p class="bg-red-2">Bg: red-2</p>
+        </div>
+        <div>
+          <h2 class="text-red-3">Text: red-3</h2>
+          <p class="bg-red-3">Bg: red-3</p>
+        </div>
+        <div>
+          <h2 class="text-red-4">Text: red-4</h2>
+          <p class="bg-red-4">Bg: red-4</p>
+        </div>
+        <div>
+          <h2 class="text-red-5">Text: red-5</h2>
+          <p class="bg-red-5">Bg: red-5</p>
+        </div>
+        <div>
+          <h2 class="text-red-6">Text: red-6</h2>
+          <p class="bg-red-6">Bg: red-6</p>
+        </div>
+        <div>
+          <h2 class="text-red-7">Text: red-7</h2>
+          <p class="bg-red-7">Bg: red-7</p>
+        </div>
+        <div>
+          <h2 class="text-red-8">Text: red-8</h2>
+          <p class="bg-red-8 text-white">Bg: red-8</p>
+        </div>
+        <div>
+          <h2 class="text-red-9">Text: red-9</h2>
+          <p class="bg-red-9 text-white">Bg: red-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-meat-1">Text: meat-1</h2>
+          <p class="bg-meat-1">Bg: meat-1</p>
+        </div>
+        <div>
+          <h2 class="text-meat-2">Text: meat-2</h2>
+          <p class="bg-meat-2">Bg: meat-2</p>
+        </div>
+        <div>
+          <h2 class="text-meat-3">Text: meat-3</h2>
+          <p class="bg-meat-3">Bg: meat-3</p>
+        </div>
+        <div>
+          <h2 class="text-meat-4">Text: meat-4</h2>
+          <p class="bg-meat-4">Bg: meat-4</p>
+        </div>
+        <div>
+          <h2 class="text-meat-5">Text: meat-5</h2>
+          <p class="bg-meat-5">Bg: meat-5</p>
+        </div>
+        <div>
+          <h2 class="text-meat-6">Text: meat-6</h2>
+          <p class="bg-meat-6">Bg: meat-6</p>
+        </div>
+        <div>
+          <h2 class="text-meat-7">Text: meat-7</h2>
+          <p class="bg-meat-7">Bg: meat-7</p>
+        </div>
+        <div>
+          <h2 class="text-meat-8">Text: meat-8</h2>
+          <p class="bg-meat-8 text-white">Bg: meat-8</p>
+        </div>
+        <div>
+          <h2 class="text-meat-9">Text: meat-9</h2>
+          <p class="bg-meat-9 text-white">Bg: meat-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-darkbrown-1">Text: darkbrown-1</h2>
+          <p class="bg-darkbrown-1">Bg: darkbrown-1</p>
+        </div>
+        <div>
+          <h2 class="text-darkbrown-2">Text: darkbrown-2</h2>
+          <p class="bg-darkbrown-2">Bg: darkbrown-2</p>
+        </div>
+        <div>
+          <h2 class="text-darkbrown-3">Text: darkbrown-3</h2>
+          <p class="bg-darkbrown-3">Bg: darkbrown-3</p>
+        </div>
+        <div>
+          <h2 class="text-darkbrown-4">Text: darkbrown-4</h2>
+          <p class="bg-darkbrown-4">Bg: darkbrown-4</p>
+        </div>
+        <div>
+          <h2 class="text-darkbrown-5">Text: darkbrown-5</h2>
+          <p class="bg-darkbrown-5 text-white">Bg: darkbrown-5</p>
+        </div>
+        <div>
+          <h2 class="text-darkbrown-6">Text: darkbrown-6</h2>
+          <p class="bg-darkbrown-6 text-white">Bg: darkbrown-6</p>
+        </div>
+        <div>
+          <h2 class="text-darkbrown-7">Text: darkbrown-7</h2>
+          <p class="bg-darkbrown-7 text-white">Bg: darkbrown-7</p>
+        </div>
+        <div>
+          <h2 class="text-darkbrown-8">Text: darkbrown-8</h2>
+          <p class="bg-darkbrown-8 text-white">Bg: darkbrown-8</p>
+        </div>
+        <div>
+          <h2 class="text-darkbrown-9">Text: darkbrown-9</h2>
+          <p class="bg-darkbrown-9 text-white">Bg: darkbrown-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-brown-1">Text: brown-1</h2>
+          <p class="bg-brown-1">Bg: brown-1</p>
+        </div>
+        <div>
+          <h2 class="text-brown-2">Text: brown-2</h2>
+          <p class="bg-brown-2">Bg: brown-2</p>
+        </div>
+        <div>
+          <h2 class="text-brown-3">Text: brown-3</h2>
+          <p class="bg-brown-3">Bg: brown-3</p>
+        </div>
+        <div>
+          <h2 class="text-brown-4">Text: brown-4</h2>
+          <p class="bg-brown-4">Bg: brown-4</p>
+        </div>
+        <div>
+          <h2 class="text-brown-5">Text: brown-5</h2>
+          <p class="bg-brown-5 text-white">Bg: brown-5</p>
+        </div>
+        <div>
+          <h2 class="text-brown-6">Text: brown-6</h2>
+          <p class="bg-brown-6 text-white">Bg: brown-6</p>
+        </div>
+        <div>
+          <h2 class="text-brown-7">Text: brown-7</h2>
+          <p class="bg-brown-7 text-white">Bg: brown-7</p>
+        </div>
+        <div>
+          <h2 class="text-brown-8">Text: brown-8</h2>
+          <p class="bg-brown-8 text-white">Bg: brown-8</p>
+        </div>
+        <div>
+          <h2 class="text-brown-9">Text: brown-9</h2>
+          <p class="bg-brown-9 text-white">Bg: brown-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-orange-1">Text: orange-1</h2>
+          <p class="bg-orange-1">Bg: orange-1</p>
+        </div>
+        <div>
+          <h2 class="text-orange-2">Text: orange-2</h2>
+          <p class="bg-orange-2">Bg: orange-2</p>
+        </div>
+        <div>
+          <h2 class="text-orange-3">Text: orange-3</h2>
+          <p class="bg-orange-3">Bg: orange-3</p>
+        </div>
+        <div>
+          <h2 class="text-orange-4">Text: orange-4</h2>
+          <p class="bg-orange-4">Bg: orange-4</p>
+        </div>
+        <div>
+          <h2 class="text-orange-5">Text: orange-5</h2>
+          <p class="bg-orange-5 text-white">Bg: orange-5</p>
+        </div>
+        <div>
+          <h2 class="text-orange-6">Text: orange-6</h2>
+          <p class="bg-orange-6 text-white">Bg: orange-6</p>
+        </div>
+        <div>
+          <h2 class="text-orange-7">Text: orange-7</h2>
+          <p class="bg-orange-7 text-white">Bg: orange-7</p>
+        </div>
+        <div>
+          <h2 class="text-orange-8">Text: orange-8</h2>
+          <p class="bg-orange-8 text-white">Bg: orange-8</p>
+        </div>
+        <div>
+          <h2 class="text-orange-9">Text: orange-9</h2>
+          <p class="bg-orange-9 text-white">Bg: orange-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-yellow-1">Text: yellow-1</h2>
+          <p class="bg-yellow-1">Bg: yellow-1</p>
+        </div>
+        <div>
+          <h2 class="text-yellow-2">Text: yellow-2</h2>
+          <p class="bg-yellow-2">Bg: yellow-2</p>
+        </div>
+        <div>
+          <h2 class="text-yellow-3">Text: yellow-3</h2>
+          <p class="bg-yellow-3">Bg: yellow-3</p>
+        </div>
+        <div>
+          <h2 class="text-yellow-4">Text: yellow-4</h2>
+          <p class="bg-yellow-4">Bg: yellow-4</p>
+        </div>
+        <div>
+          <h2 class="text-yellow-5">Text: yellow-5</h2>
+          <p class="bg-yellow-5 text-white">Bg: yellow-5</p>
+        </div>
+        <div>
+          <h2 class="text-yellow-6">Text: yellow-6</h2>
+          <p class="bg-yellow-6 text-white">Bg: yellow-6</p>
+        </div>
+        <div>
+          <h2 class="text-yellow-7">Text: yellow-7</h2>
+          <p class="bg-yellow-7 text-white">Bg: yellow-7</p>
+        </div>
+        <div>
+          <h2 class="text-yellow-8">Text: yellow-8</h2>
+          <p class="bg-yellow-8 text-white">Bg: yellow-8</p>
+        </div>
+        <div>
+          <h2 class="text-yellow-9">Text: yellow-9</h2>
+          <p class="bg-yellow-9 text-white">Bg: yellow-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-darkgreen-1">Text: darkgreen-1</h2>
+          <p class="bg-darkgreen-1">Bg: darkgreen-1</p>
+        </div>
+        <div>
+          <h2 class="text-darkgreen-2">Text: darkgreen-2</h2>
+          <p class="bg-darkgreen-2">Bg: darkgreen-2</p>
+        </div>
+        <div>
+          <h2 class="text-darkgreen-3">Text: darkgreen-3</h2>
+          <p class="bg-darkgreen-3">Bg: darkgreen-3</p>
+        </div>
+        <div>
+          <h2 class="text-darkgreen-4">Text: darkgreen-4</h2>
+          <p class="bg-darkgreen-4">Bg: darkgreen-4</p>
+        </div>
+        <div>
+          <h2 class="text-darkgreen-5">Text: darkgreen-5</h2>
+          <p class="bg-darkgreen-5 text-white">Bg: darkgreen-5</p>
+        </div>
+        <div>
+          <h2 class="text-darkgreen-6">Text: darkgreen-6</h2>
+          <p class="bg-darkgreen-6 text-white">Bg: darkgreen-6</p>
+        </div>
+        <div>
+          <h2 class="text-darkgreen-7">Text: darkgreen-7</h2>
+          <p class="bg-darkgreen-7 text-white">Bg: darkgreen-7</p>
+        </div>
+        <div>
+          <h2 class="text-darkgreen-8">Text: darkgreen-8</h2>
+          <p class="bg-darkgreen-8 text-white">Bg: darkgreen-8</p>
+        </div>
+        <div>
+          <h2 class="text-darkgreen-9">Text: darkgreen-9</h2>
+          <p class="bg-darkgreen-9 text-white">Bg: darkgreen-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-green-1">Text: green-1</h2>
+          <p class="bg-green-1">Bg: green-1</p>
+        </div>
+        <div>
+          <h2 class="text-green-2">Text: green-2</h2>
+          <p class="bg-green-2">Bg: green-2</p>
+        </div>
+        <div>
+          <h2 class="text-green-3">Text: green-3</h2>
+          <p class="bg-green-3">Bg: green-3</p>
+        </div>
+        <div>
+          <h2 class="text-green-4">Text: green-4</h2>
+          <p class="bg-green-4">Bg: green-4</p>
+        </div>
+        <div>
+          <h2 class="text-green-5">Text: green-5</h2>
+          <p class="bg-green-5 text-white">Bg: green-5</p>
+        </div>
+        <div>
+          <h2 class="text-green-6">Text: green-6</h2>
+          <p class="bg-green-6 text-white">Bg: green-6</p>
+        </div>
+        <div>
+          <h2 class="text-green-7">Text: green-7</h2>
+          <p class="bg-green-7 text-white">Bg: green-7</p>
+        </div>
+        <div>
+          <h2 class="text-green-8">Text: green-8</h2>
+          <p class="bg-green-8 text-white">Bg: green-8</p>
+        </div>
+        <div>
+          <h2 class="text-green-9">Text: green-9</h2>
+          <p class="bg-green-9 text-white">Bg: green-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-slimgreen-1">Text: slimgreen-1</h2>
+          <p class="bg-slimgreen-1">Bg: slimgreen-1</p>
+        </div>
+        <div>
+          <h2 class="text-slimgreen-2">Text: slimgreen-2</h2>
+          <p class="bg-slimgreen-2">Bg: slimgreen-2</p>
+        </div>
+        <div>
+          <h2 class="text-slimgreen-3">Text: slimgreen-3</h2>
+          <p class="bg-slimgreen-3">Bg: slimgreen-3</p>
+        </div>
+        <div>
+          <h2 class="text-slimgreen-4">Text: slimgreen-4</h2>
+          <p class="bg-slimgreen-4">Bg: slimgreen-4</p>
+        </div>
+        <div>
+          <h2 class="text-slimgreen-5">Text: slimgreen-5</h2>
+          <p class="bg-slimgreen-5 text-white">Bg: slimgreen-5</p>
+        </div>
+        <div>
+          <h2 class="text-slimgreen-6">Text: slimgreen-6</h2>
+          <p class="bg-slimgreen-6 text-white">Bg: slimgreen-6</p>
+        </div>
+        <div>
+          <h2 class="text-slimgreen-7">Text: slimgreen-7</h2>
+          <p class="bg-slimgreen-7 text-white">Bg: slimgreen-7</p>
+        </div>
+        <div>
+          <h2 class="text-slimgreen-8">Text: slimgreen-8</h2>
+          <p class="bg-slimgreen-8 text-white">Bg: slimgreen-8</p>
+        </div>
+        <div>
+          <h2 class="text-slimgreen-9">Text: slimgreen-9</h2>
+          <p class="bg-slimgreen-9 text-white">Bg: slimgreen-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-purple-1">Text: purple-1</h2>
+          <p class="bg-purple-1">Bg: purple-1</p>
+        </div>
+        <div>
+          <h2 class="text-purple-2">Text: purple-2</h2>
+          <p class="bg-purple-2">Bg: purple-2</p>
+        </div>
+        <div>
+          <h2 class="text-purple-3">Text: purple-3</h2>
+          <p class="bg-purple-3">Bg: purple-3</p>
+        </div>
+        <div>
+          <h2 class="text-purple-4">Text: purple-4</h2>
+          <p class="bg-purple-4">Bg: purple-4</p>
+        </div>
+        <div>
+          <h2 class="text-purple-5">Text: purple-5</h2>
+          <p class="bg-purple-5 text-white">Bg: purple-5</p>
+        </div>
+        <div>
+          <h2 class="text-purple-6">Text: purple-6</h2>
+          <p class="bg-purple-6 text-white">Bg: purple-6</p>
+        </div>
+        <div>
+          <h2 class="text-purple-7">Text: purple-7</h2>
+          <p class="bg-purple-7 text-white">Bg: purple-7</p>
+        </div>
+        <div>
+          <h2 class="text-purple-8">Text: purple-8</h2>
+          <p class="bg-purple-8 text-white">Bg: purple-8</p>
+        </div>
+        <div>
+          <h2 class="text-purple-9">Text: purple-9</h2>
+          <p class="bg-purple-9 text-white">Bg: purple-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-nightblue-1">Text: nightblue-1</h2>
+          <p class="bg-nightblue-1">Bg: nightblue-1</p>
+        </div>
+        <div>
+          <h2 class="text-nightblue-2">Text: nightblue-2</h2>
+          <p class="bg-nightblue-2">Bg: nightblue-2</p>
+        </div>
+        <div>
+          <h2 class="text-nightblue-3">Text: nightblue-3</h2>
+          <p class="bg-nightblue-3">Bg: nightblue-3</p>
+        </div>
+        <div>
+          <h2 class="text-nightblue-4">Text: nightblue-4</h2>
+          <p class="bg-nightblue-4">Bg: nightblue-4</p>
+        </div>
+        <div>
+          <h2 class="text-nightblue-5">Text: nightblue-5</h2>
+          <p class="bg-nightblue-5 text-white">Bg: nightblue-5</p>
+        </div>
+        <div>
+          <h2 class="text-nightblue-6">Text: nightblue-6</h2>
+          <p class="bg-nightblue-6 text-white">Bg: nightblue-6</p>
+        </div>
+        <div>
+          <h2 class="text-nightblue-7">Text: nightblue-7</h2>
+          <p class="bg-nightblue-7 text-white">Bg: nightblue-7</p>
+        </div>
+        <div>
+          <h2 class="text-nightblue-8">Text: nightblue-8</h2>
+          <p class="bg-nightblue-8 text-white">Bg: nightblue-8</p>
+        </div>
+        <div>
+          <h2 class="text-nightblue-9">Text: nightblue-9</h2>
+          <p class="bg-nightblue-9 text-white">Bg: nightblue-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-seablue-1">Text: seablue-1</h2>
+          <p class="bg-seablue-1">Bg: seablue-1</p>
+        </div>
+        <div>
+          <h2 class="text-seablue-2">Text: seablue-2</h2>
+          <p class="bg-seablue-2">Bg: seablue-2</p>
+        </div>
+        <div>
+          <h2 class="text-seablue-3">Text: seablue-3</h2>
+          <p class="bg-seablue-3">Bg: seablue-3</p>
+        </div>
+        <div>
+          <h2 class="text-seablue-4">Text: seablue-4</h2>
+          <p class="bg-seablue-4">Bg: seablue-4</p>
+        </div>
+        <div>
+          <h2 class="text-seablue-5">Text: seablue-5</h2>
+          <p class="bg-seablue-5 text-white">Bg: seablue-5</p>
+        </div>
+        <div>
+          <h2 class="text-seablue-6">Text: seablue-6</h2>
+          <p class="bg-seablue-6 text-white">Bg: seablue-6</p>
+        </div>
+        <div>
+          <h2 class="text-seablue-7">Text: seablue-7</h2>
+          <p class="bg-seablue-7 text-white">Bg: seablue-7</p>
+        </div>
+        <div>
+          <h2 class="text-seablue-8">Text: seablue-8</h2>
+          <p class="bg-seablue-8 text-white">Bg: seablue-8</p>
+        </div>
+        <div>
+          <h2 class="text-seablue-9">Text: seablue-9</h2>
+          <p class="bg-seablue-9 text-white">Bg: seablue-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-skyblue-1">Text: skyblue-1</h2>
+          <p class="bg-skyblue-1">Bg: skyblue-1</p>
+        </div>
+        <div>
+          <h2 class="text-skyblue-2">Text: skyblue-2</h2>
+          <p class="bg-skyblue-2">Bg: skyblue-2</p>
+        </div>
+        <div>
+          <h2 class="text-skyblue-3">Text: skyblue-3</h2>
+          <p class="bg-skyblue-3">Bg: skyblue-3</p>
+        </div>
+        <div>
+          <h2 class="text-skyblue-4">Text: skyblue-4</h2>
+          <p class="bg-skyblue-4">Bg: skyblue-4</p>
+        </div>
+        <div>
+          <h2 class="text-skyblue-5">Text: skyblue-5</h2>
+          <p class="bg-skyblue-5 text-white">Bg: skyblue-5</p>
+        </div>
+        <div>
+          <h2 class="text-skyblue-6">Text: skyblue-6</h2>
+          <p class="bg-skyblue-6 text-white">Bg: skyblue-6</p>
+        </div>
+        <div>
+          <h2 class="text-skyblue-7">Text: skyblue-7</h2>
+          <p class="bg-skyblue-7 text-white">Bg: skyblue-7</p>
+        </div>
+        <div>
+          <h2 class="text-skyblue-8">Text: skyblue-8</h2>
+          <p class="bg-skyblue-8 text-white">Bg: skyblue-8</p>
+        </div>
+        <div>
+          <h2 class="text-skyblue-9">Text: skyblue-9</h2>
+          <p class="bg-skyblue-9 text-white">Bg: skyblue-9</p>
+        </div>
+      </div>
+      <hr />
+      <div class="color">
+        <div>
+          <h2 class="text-cloudblue-1">Text: cloudblue-1</h2>
+          <p class="bg-cloudblue-1">Bg: cloudblue-1</p>
+        </div>
+        <div>
+          <h2 class="text-cloudblue-2">Text: cloudblue-2</h2>
+          <p class="bg-cloudblue-2">Bg: cloudblue-2</p>
+        </div>
+        <div>
+          <h2 class="text-cloudblue-3">Text: cloudblue-3</h2>
+          <p class="bg-cloudblue-3">Bg: cloudblue-3</p>
+        </div>
+        <div>
+          <h2 class="text-cloudblue-4">Text: cloudblue-4</h2>
+          <p class="bg-cloudblue-4">Bg: cloudblue-4</p>
+        </div>
+        <div>
+          <h2 class="text-cloudblue-5">Text: cloudblue-5</h2>
+          <p class="bg-cloudblue-5 text-white">Bg: cloudblue-5</p>
+        </div>
+        <div>
+          <h2 class="text-cloudblue-6">Text: cloudblue-6</h2>
+          <p class="bg-cloudblue-6 text-white">Bg: cloudblue-6</p>
+        </div>
+        <div>
+          <h2 class="text-cloudblue-7">Text: cloudblue-7</h2>
+          <p class="bg-cloudblue-7 text-white">Bg: cloudblue-7</p>
+        </div>
+        <div>
+          <h2 class="text-cloudblue-8">Text: cloudblue-8</h2>
+          <p class="bg-cloudblue-8 text-white">Bg: cloudblue-8</p>
+        </div>
+        <div>
+          <h2 class="text-cloudblue-9">Text: cloudblue-9</h2>
+          <p class="bg-cloudblue-9 text-white">Bg: cloudblue-9</p>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </body>
+</html>
