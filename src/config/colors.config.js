@@ -7,8 +7,8 @@ export default {
   white: {
     white: "#ffffff",
   },
-  void: {
-    void: "#000000",
+  black: {
+    black: "#000000",
   },
   gray: {
     "gray-1": "#ebebeb",
