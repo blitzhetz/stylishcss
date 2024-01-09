@@ -4,7 +4,7 @@ import colors from "./colors.config.js";
 
 const defaultConfig = {
   content: [],
-  reset: false,
+  reset: true,
   theme: {
     screens: {
       sm: "(min-width: 640px)",

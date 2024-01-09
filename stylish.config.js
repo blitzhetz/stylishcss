@@ -1,5 +1,5 @@
 export default {
   content: [],
-  reset: false,
+  reset: true,
   theme: {},
 };
